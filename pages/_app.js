@@ -6,6 +6,7 @@ import Nprogress from "nprogress";
 import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
+  // Nprogress.configure({})
   return (
     <>
       <Head></Head>

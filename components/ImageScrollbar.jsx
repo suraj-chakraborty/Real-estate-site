@@ -8,28 +8,28 @@ const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
 
   return (
-    <flex justifyContent="center" alignItems="center" margin="2">
+    <Flex justifyContent="center" alignItems="center" margin="2">
       <Icon
         as={FaArrowAltCircleLeft}
-        onClick={() => scrollPrev()}
+        onClick={scrollPrev}
         fontSize="2xl"
         cursor="pointer"
       />
-    </flex>
+    </Flex>
   );
 };
 const RightArrow = () => {
   const { scrollNext } = useContext(VisibilityContext);
 
   return (
-    <flex justifyContent="center" alignItems="center" margin="2">
+    <Flex justifyContent="center" alignItems="center" margin="2">
       <Icon
         as={FaArrowAltCircleRight}
         onClick={() => scrollNext()}
         fontSize="2xl"
         cursor="pointer"
       />
-    </flex>
+    </Flex>
   );
 };
 
